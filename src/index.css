@@ -1,13 +1,179 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+*
+{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body
+{
+  font-family: "Montseratt", sans-serif;
+}
+
+.container
+{
+  background-image: url("./assets/rain.gif");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+}
+
+.container.Clear
+{
+  background-image: url("./assets/clear.gif");
+}
+
+.container.Clear.night
+{
+  background-image: url("./assets/clear night.gif");
+}
+
+.container.Clouds
+{
+  background-image: url("./assets/clouds.gif");
+}
+
+.container.Clouds.night
+{
+  background-image: url("./assets/clouds night.gif");
+}
+
+.container.Rain
+{
+  background-image: url("./assets/rain.gif");
+}
+
+.container.Rain.night
+{
+  background-image: url("./assets/rain night.gif");
+}
+
+.container.Wind
+{
+  background-image: url("./assets/wind.gif");
+}
+
+.container.Wind.night
+{
+  background-image: url("./assets/wind night.gif");
+}
+
+.container.Snow
+{
+  background-image: url("./assets/snow.gif");
+}
+
+.container.Snow.night
+{
+  background-image: url("./assets/snow night.gif");
+}
+
+.container.Haze
+{
+  background-image: url("./assets/haze.gif");
+}
+
+.container.Lightning
+{
+  background-image: url("./assets/lightning.gif");
+}
+
+main
+{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box
+{
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar
+{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus
+{
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location
+{
+  color: #fff;
+  font-size: 42px;
+  font-weight: 1000;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box
+{
+  text-align: center;
+}
+
+.weather-box .temp
+{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+  
+  color: #fff;
+  font-size: 80px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather
+{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.not-found
+{
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
 }
