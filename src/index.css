@@ -14,7 +14,7 @@ body
 
 .container
 {
-  background-image: url("./assets/rain.gif");
+  background-image: url("./Assets/Gifs/rain.gif");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease-out;

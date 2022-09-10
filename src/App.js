@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./Routes/Home/Home";
 
 function App() {
   return (
